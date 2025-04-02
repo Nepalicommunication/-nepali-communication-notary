@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self';">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Communication - Online Notary Service</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXX-X');
+    </script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; text-align: center; margin: 0; padding: 0; background: url('nepal_usa_background.jpg') no-repeat center center fixed; background-size: cover; }
+        header { background: rgba(0, 0, 0, 0.7); color: white; padding: 20px; font-size: 28px; font-weight: bold; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        section { padding: 40px; margin: 20px auto; width: 80%; background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        h2 { color: #0073e6; }
+        button { padding: 12px 24px; background: #0073e6; color: white; border: none; cursor: pointer; font-size: 16px; border-radius: 5px; transition: 0.3s; }
+        button:hover { background: #005bb5; }
+        .logo { margin-top: 20px; }
+        .payment-icons img { width: 60px; margin: 15px; }
+        .social-links a { margin: 0 15px; }
+        form input, form textarea { display: block; width: 90%; margin: 10px auto; padding: 12px; border: 1px solid #ccc; border-radius: 5px; }
+        .live-chat { position: fixed; bottom: 20px; right: 20px; background: green; color: white; padding: 15px 20px; border-radius: 50px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .live-chat:hover { background: darkgreen; }
+        .testimonial-slider { overflow: hidden; width: 80%; margin: auto; }
+        .testimonial { display: none; font-style: italic; }
+        .testimonial.active { display: block; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+            <img src="nepal_flag.png" alt="Nepal Flag" width="40">
+            <img src="usa_flag.png" alt="USA Flag" width="40">
+        </div>
+        <img src="A_logo_for_Nepali_Communication,_an_online_notary_.png" alt="Nepali Communication Logo" class="logo" width="150">
+        <br>
+        Welcome to Nepali Communication - Online Notary Service
+        <p style="font-size: 18px; font-weight: bold; margin-top: 10px;">📜 Your Documents, Your Convenience – 100% Online Notary Services! 📜</p>
+    </header>
+    
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider">
+            <p class="testimonial active">"Fast and reliable service! Highly recommended." – Sarah J.</p>
+            <p class="testimonial">"Super easy process, and very affordable!" – Michael K.</p>
+            <p class="testimonial">"Best notary service I’ve used online!" – Lisa P.</p>
+        </div>
+    </section>
+    
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>What documents can be notarized?</summary>
+            <p>We notarize legal, business, and personal documents.</p>
+        </details>
+        <details>
+            <summary>How long does it take?</summary>
+            <p>The process usually takes 5-10 minutes.</p>
+        </details>
+    </section>
+    
+    <section class="security">
+        <h2>Trusted & Secure</h2>
+        <p>✔ Verified Notary Public</p>
+        <p>✔ Secure Payments & Data Encryption</p>
+    </section>
+    
+    <section class="blog">
+        <h2>Latest Articles</h2>
+        <p>Coming Soon! Stay tuned for legal insights.</p>
+    </section>
+    
+    <script>
+        let testimonials = document.querySelectorAll(".testimonial");
+        let index = 0;
+        function showNextTestimonial() {
+            testimonials[index].classList.remove("active");
+            index = (index + 1) % testimonials.length;
+            testimonials[index].classList.add("active");
+        }
+        setInterval(showNextTestimonial, 3000);
+    </script>
+    
+    <button onclick="openChat()" class="live-chat">Live Chat</button>
+</body>
+</html>
